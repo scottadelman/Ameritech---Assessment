@@ -1,0 +1,287 @@
+﻿@page "/"
+@using ADS.Blazor.Assessment.Shared
+@inject HttpClient httpClient
+@inject NavigationManager _navigationManager
+
+    
+<PageTitle>Product List</PageTitle>
+
+<br />
+
+    <table class="table table-striped align-middle table-bordered">
+        <thead class="table-success">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Size</th>
+                <th>Category</th>
+                <th>Price</th>
+                <th>Inventory</th>
+                <th>Edit Inventory</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var Product in Products) {
+                <tr>
+                    <td>@Product.Id</td>
+                    <td>@Product.Name</td>
+                    <td>@Product.Size</td>
+                    <td>@Product.Category.Id  -  @Product.Category.Name</td>
+                    <td>@Product.Price</td>
+                    <td>@Product.Inventory</td>
+                    <td><button class="btn btn-primary" @onclick='() => OpenInventoryPopup(Product.Id)'>Edit Inventory</button></td>
+                    <td><button class="btn btn-primary" @onclick='() => DeleteProduct(Product.Id)'>Delete</button></td>
+                </tr>
+                }
+        </tbody>
+
+    </table>
+
+
+    <button class="btn btn-primary" @onclick="AddNewProducts"> Add New Products </button>
+
+@if (ShowPopup)
+    {
+                <!-- This is the popup to create a product -->
+                <div class="modal" tabindex="-1" style="display:block" 
+                     role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title">Add Product</h3>
+                                <!-- Button to close the popup -->
+                                <button type="button" class="close"
+                                        @onclick="ClosePopup">
+                                    <span aria-hidden="true">X</span>
+                                </button>
+                            </div>
+                            <!-- Form for the new product -->
+                            <div class="modal-body">
+                                <label> Name </label>
+                                <input class="form-control" type="text"
+                                       placeholder="Name"
+                                       @bind="objProductDto.Name" />
+                                <br />
+                                <label> Size </label>
+                                <input class="form-control" type="text"
+                                       placeholder="Size"
+                                       @bind="objProductDto.Size" />
+                                <br />
+                                <label> Price </label>
+                                <input class="form-control" type="text"
+                                       placeholder="Price"
+                                       @bind="objProductDto.Price" />
+                                <br />
+                                <label> Category Id </label> <br />
+                                <input class="form-contol" type="text"
+                                       placeholder="Category Id"
+                                       @bind="objCategoryDto.Id" />
+                                <br />
+                                <br />
+                                <label> Inventory Count </label>
+                                <input class="form-control" type="text"
+                                       placeholder="Inventory"
+                                       @bind="objProductDto.Inventory" />
+
+
+                                <br />
+                                <!-- Button to save the Product -->
+                                <button class="btn btn-primary"
+                                        @onclick="SaveProduct">
+                                    Save
+                                </button>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+    }
+
+
+<button class="btn btn-primary" @onclick="OpenCategoryPopup"> Add New Category </button>
+
+@if (ShowCategoryPopup)
+    {
+                <!-- This is the popup to create a product -->
+                <div class="modal" tabindex="-1" style="display:block" 
+                     role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title">Add Category</h3>
+                                <!-- Button to close the popup -->
+                                <button type="button" class="close"
+                                        @onclick="CloseCategoryPopup">
+                                    <span aria-hidden="true">X</span>
+                                </button>
+                            </div>
+                            <!-- Form for the new product -->
+                            <div class="modal-body">
+                                <label> Id Number </label>
+                                <input class="form-control" type="text"
+                                       placeholder="Id Number"
+                                       @bind="objCategoryDto.Id" />
+                                <br />
+                                <label> Name </label>
+                                <input class="form-control" type="text"
+                                       placeholder="Category Name"
+                                       @bind="objCategoryDto.Name" />
+                                
+                                <br />
+                                <!-- Button to save the Product -->
+                                <button class="btn btn-primary"
+                                        @onclick="SaveCategory">
+                                    Save
+                                </button>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+    }
+
+
+@if(ShowInventoryPopup) { 
+                <div class="modal" tabindex="-1" style="display:block" 
+                     role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title">Edit Product Inventory</h3>
+                                <!-- Button to close the popup -->
+                                <button type="button" class="close"
+                                        @onclick="CloseInventoryPopup">
+                                    <span aria-hidden="true">X</span>
+                                </button>
+                            </div>
+                            <!-- Form for the new product -->
+                            <div class="modal-body">
+                                <label>Insert Updated Product Inventory Below</label>
+                                <input class="form-control" type="text"
+                                       placeholder="Inventory"
+                                       @bind="objProductDto.Inventory" />
+                                <br />
+                                <!-- Button to save the Product -->
+                                <button class="btn btn-primary"
+                                         @onclick='() => EditInventory(Product.Id, objProductDto.Inventory)'>
+                                    Save
+                                </button>
+                             
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    }
+
+
+@code {
+    bool ShowPopup = false;
+    bool ShowInventoryPopup = false;
+    bool ShowCategoryPopup = false;
+    protected List<ProductDto> Products = new List<ProductDto>();
+
+    protected ProductDto Product = new ProductDto();
+    protected ProductDto objProductDto = new ProductDto();
+    protected CategoryDto objCategoryDto = new CategoryDto();
+    protected override async Task OnInitializedAsync()
+
+    {
+        await GetProduct();
+    }
+    protected async Task GetProduct()
+    {
+        Products = await httpClient.GetFromJsonAsync<List<ProductDto>>("/product");
+
+    }
+
+    void ClosePopup()
+    {
+        // Close the Popup
+        ShowPopup = false;
+    }
+
+    void CloseInventoryPopup()
+    {
+        // Close the Popup
+        ShowInventoryPopup = false;
+    }
+
+    void CloseCategoryPopup()
+    {
+        // Close the Popup
+        ShowCategoryPopup = false;
+    }
+
+    void OpenInventoryPopup(int id)
+    {
+        objProductDto = new ProductDto();
+        objProductDto.Id = id;
+        ShowInventoryPopup = true;
+    }
+
+    void OpenCategoryPopup()
+    {
+        objCategoryDto = new CategoryDto();
+        ShowCategoryPopup = true;
+    }
+
+    void AddNewProducts()
+    {
+        // Make new Product
+        objProductDto = new ProductDto();
+
+        objCategoryDto = new CategoryDto();
+
+        objProductDto.Category = objCategoryDto;
+
+        // Open the Popup
+        ShowPopup = true;
+    }
+
+
+    async Task SaveProduct()
+    {
+        // Close the Popup
+        ShowPopup = false;
+        // Call API Product Controller at the Add product endpoint 
+        await httpClient.PostAsJsonAsync("/Add", objProductDto);
+        // refresh page
+        _navigationManager.NavigateTo("/", true);
+
+    }
+
+
+    async Task SaveCategory()
+    {
+        // Close the Popup
+        ShowCategoryPopup = false;
+        // Create new Category 
+        await httpClient.PostAsJsonAsync("/Category", objCategoryDto);
+        _navigationManager.NavigateTo("/", true);
+
+    }
+
+    async Task DeleteProduct(int id)
+    {
+        await httpClient.DeleteAsync("/Delete/" + id);
+        _navigationManager.NavigateTo("/", true);
+    }
+
+    async Task EditInventory(int id, int inventoryCount)
+    {
+        await httpClient.PutAsJsonAsync("/Edit/", objProductDto);
+        ShowInventoryPopup = false;
+        _navigationManager.NavigateTo("/", true);
+
+    }
+
+
+    }

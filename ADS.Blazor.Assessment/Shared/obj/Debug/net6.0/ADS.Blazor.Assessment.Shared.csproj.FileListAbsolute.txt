@@ -1,0 +1,24 @@
+C:/Users/Work/source/repos/ADS.Blazor.Assessment/ADS.Blazor.Assessment/Shared/bin/Debug/net6.0/ADS.Blazor.Assessment.Shared.deps.json
+C:/Users/Work/source/repos/ADS.Blazor.Assessment/ADS.Blazor.Assessment/Shared/bin/Debug/net6.0/ADS.Blazor.Assessment.Shared.dll
+C:/Users/Work/source/repos/ADS.Blazor.Assessment/ADS.Blazor.Assessment/Shared/bin/Debug/net6.0/ADS.Blazor.Assessment.Shared.pdb
+C:/Users/Work/source/repos/ADS.Blazor.Assessment/ADS.Blazor.Assessment/Shared/obj/Debug/net6.0/ADS.Blazor.Assessment.Shared.csproj.AssemblyReference.cache
+C:/Users/Work/source/repos/ADS.Blazor.Assessment/ADS.Blazor.Assessment/Shared/obj/Debug/net6.0/ADS.Blazor.Assessment.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/Work/source/repos/ADS.Blazor.Assessment/ADS.Blazor.Assessment/Shared/obj/Debug/net6.0/ADS.Blazor.Assessment.Shared.AssemblyInfoInputs.cache
+C:/Users/Work/source/repos/ADS.Blazor.Assessment/ADS.Blazor.Assessment/Shared/obj/Debug/net6.0/ADS.Blazor.Assessment.Shared.AssemblyInfo.cs
+C:/Users/Work/source/repos/ADS.Blazor.Assessment/ADS.Blazor.Assessment/Shared/obj/Debug/net6.0/ADS.Blazor.Assessment.Shared.csproj.CoreCompileInputs.cache
+C:/Users/Work/source/repos/ADS.Blazor.Assessment/ADS.Blazor.Assessment/Shared/obj/Debug/net6.0/ADS.Blazor.Assessment.Shared.dll
+C:/Users/Work/source/repos/ADS.Blazor.Assessment/ADS.Blazor.Assessment/Shared/obj/Debug/net6.0/refint/ADS.Blazor.Assessment.Shared.dll
+C:/Users/Work/source/repos/ADS.Blazor.Assessment/ADS.Blazor.Assessment/Shared/obj/Debug/net6.0/ADS.Blazor.Assessment.Shared.pdb
+C:/Users/Work/source/repos/ADS.Blazor.Assessment/ADS.Blazor.Assessment/Shared/obj/Debug/net6.0/ref/ADS.Blazor.Assessment.Shared.dll
+/Users/user/Desktop/ADS.Blazor.Assessment 2/ADS.Blazor.Assessment/Shared/bin/Debug/net6.0/ADS.Blazor.Assessment.Shared.deps.json
+/Users/user/Desktop/ADS.Blazor.Assessment 2/ADS.Blazor.Assessment/Shared/bin/Debug/net6.0/ADS.Blazor.Assessment.Shared.dll
+/Users/user/Desktop/ADS.Blazor.Assessment 2/ADS.Blazor.Assessment/Shared/bin/Debug/net6.0/ADS.Blazor.Assessment.Shared.pdb
+/Users/user/Desktop/ADS.Blazor.Assessment 2/ADS.Blazor.Assessment/Shared/obj/Debug/net6.0/ADS.Blazor.Assessment.Shared.csproj.AssemblyReference.cache
+/Users/user/Desktop/ADS.Blazor.Assessment 2/ADS.Blazor.Assessment/Shared/obj/Debug/net6.0/ADS.Blazor.Assessment.Shared.GeneratedMSBuildEditorConfig.editorconfig
+/Users/user/Desktop/ADS.Blazor.Assessment 2/ADS.Blazor.Assessment/Shared/obj/Debug/net6.0/ADS.Blazor.Assessment.Shared.AssemblyInfoInputs.cache
+/Users/user/Desktop/ADS.Blazor.Assessment 2/ADS.Blazor.Assessment/Shared/obj/Debug/net6.0/ADS.Blazor.Assessment.Shared.AssemblyInfo.cs
+/Users/user/Desktop/ADS.Blazor.Assessment 2/ADS.Blazor.Assessment/Shared/obj/Debug/net6.0/ADS.Blazor.Assessment.Shared.csproj.CoreCompileInputs.cache
+/Users/user/Desktop/ADS.Blazor.Assessment 2/ADS.Blazor.Assessment/Shared/obj/Debug/net6.0/ADS.Blazor.Assessment.Shared.dll
+/Users/user/Desktop/ADS.Blazor.Assessment 2/ADS.Blazor.Assessment/Shared/obj/Debug/net6.0/refint/ADS.Blazor.Assessment.Shared.dll
+/Users/user/Desktop/ADS.Blazor.Assessment 2/ADS.Blazor.Assessment/Shared/obj/Debug/net6.0/ADS.Blazor.Assessment.Shared.pdb
+/Users/user/Desktop/ADS.Blazor.Assessment 2/ADS.Blazor.Assessment/Shared/obj/Debug/net6.0/ref/ADS.Blazor.Assessment.Shared.dll

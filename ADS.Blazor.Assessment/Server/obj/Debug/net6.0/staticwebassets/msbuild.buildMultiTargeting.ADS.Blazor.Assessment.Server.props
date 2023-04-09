@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/ADS.Blazor.Assessment.Server.props" />
+</Project>

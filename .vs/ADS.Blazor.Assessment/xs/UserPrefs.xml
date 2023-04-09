@@ -1,0 +1,50 @@
+﻿<Properties StartupConfiguration="{5C4B060F-2790-4AFC-B749-1D2FDB80ECE0}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ADS.Blazor.Assessment/Server/Controllers/ProductController.cs">
+    <Files>
+      <File FileName="ADS.Blazor.Assessment/Client/Program.cs" Line="12" Column="1" />
+      <File FileName="ADS.Blazor.Assessment/Shared/ProductDto.cs" Line="15" Column="21" />
+      <File FileName="ADS.Blazor.Assessment/Shared/CategoryDto.cs" Line="11" Column="17" />
+      <File FileName="ADS.Blazor.Assessment/Server/sqlite.db" Line="1" Column="1" />
+      <File FileName="ADS.Blazor.Assessment/Server/appsettings.json" Line="1" Column="1" />
+      <File FileName="ADS.Blazor.Assessment/Server/Program.cs" Line="13" Column="2" />
+      <File FileName="ADS.Blazor.Assessment/Client/Shared/MainLayout.razor" Line="14" Column="18" />
+      <File FileName="ADS.Blazor.Assessment/Server/Controllers/ProductController.cs" Line="92" Column="5" />
+      <File FileName="ADS.Blazor.Assessment/Server/Models/ModelContext.cs" Line="8" Column="21" />
+      <File FileName="Readme.md" Line="1" Column="1" />
+      <File FileName="ADS.Blazor.Assessment/Server/Models/Product.cs" Line="1" Column="1" />
+      <File FileName="ADS.Blazor.Assessment/Client/Pages/Index.razor" Line="165" Column="57" />
+      <File FileName="ADS.Blazor.Assessment/Client/Shared/NavMenu.razor" Line="1" Column="1" />
+      <File FileName="ADS.Blazor.Assessment/Server/Properties/launchSettings.json" Line="1" Column="1" />
+      <File FileName="ADS.Blazor.Assessment/Server/Models/Category.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ADS.Blazor.Assessment" expanded="True">
+            <Node name="Solution Items" expanded="True" />
+            <Node name="ADS.Blazor.Assessment.Client" expanded="True">
+              <Node name="Pages" expanded="True" />
+              <Node name="Shared" expanded="True" />
+            </Node>
+            <Node name="ADS.Blazor.Assessment.Server" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="ProductController.cs" selected="True" />
+              </Node>
+              <Node name="Models" expanded="True" />
+              <Node name="Pages" expanded="True" />
+              <Node name="Properties" expanded="True" />
+            </Node>
+            <Node name="ADS.Blazor.Assessment.Shared" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.ADS.Blazor.Assessment.Server PreferredExecutionTarget="/Applications/Google Chrome.app" />
+</Properties>

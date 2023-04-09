@@ -1,0 +1,140 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/user/Desktop/ADS.Blazor.Assessment 2/ADS.Blazor.Assessment/Client/ADS.Blazor.Assessment.Client.csproj": {}
+  },
+  "projects": {
+    "/Users/user/Desktop/ADS.Blazor.Assessment 2/ADS.Blazor.Assessment/Client/ADS.Blazor.Assessment.Client.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/user/Desktop/ADS.Blazor.Assessment 2/ADS.Blazor.Assessment/Client/ADS.Blazor.Assessment.Client.csproj",
+        "projectName": "ADS.Blazor.Assessment.Client",
+        "projectPath": "/Users/user/Desktop/ADS.Blazor.Assessment 2/ADS.Blazor.Assessment/Client/ADS.Blazor.Assessment.Client.csproj",
+        "packagesPath": "/Users/user/.nuget/packages/",
+        "outputPath": "/Users/user/Desktop/ADS.Blazor.Assessment 2/ADS.Blazor.Assessment/Client/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/user/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/user/Desktop/ADS.Blazor.Assessment 2/ADS.Blazor.Assessment/Shared/ADS.Blazor.Assessment.Shared.csproj": {
+                "projectPath": "/Users/user/Desktop/ADS.Blazor.Assessment 2/ADS.Blazor.Assessment/Shared/ADS.Blazor.Assessment.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.WebAssembly": {
+              "target": "Package",
+              "version": "[6.0.14, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.14, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
+              "version": "[6.0.15, 6.0.15]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "browser-wasm": {
+          "#import": []
+        }
+      }
+    },
+    "/Users/user/Desktop/ADS.Blazor.Assessment 2/ADS.Blazor.Assessment/Shared/ADS.Blazor.Assessment.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/user/Desktop/ADS.Blazor.Assessment 2/ADS.Blazor.Assessment/Shared/ADS.Blazor.Assessment.Shared.csproj",
+        "projectName": "ADS.Blazor.Assessment.Shared",
+        "projectPath": "/Users/user/Desktop/ADS.Blazor.Assessment 2/ADS.Blazor.Assessment/Shared/ADS.Blazor.Assessment.Shared.csproj",
+        "packagesPath": "/Users/user/.nuget/packages/",
+        "outputPath": "/Users/user/Desktop/ADS.Blazor.Assessment 2/ADS.Blazor.Assessment/Shared/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/user/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
