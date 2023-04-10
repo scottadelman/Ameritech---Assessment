@@ -197,14 +197,14 @@
       "netstandard.dll": "sha256-REs1\/xYvAzuX2k2Y5p\/5IaM3O\/zaiYSW62pOQBGMrrA=",
       "System.Private.CoreLib.dll": "sha256-Bz7VnNtt03SzAvIN30yx1e25P6SfMdLYIaKIy7ASEnw=",
       "ADS.Blazor.Assessment.Shared.dll": "sha256-DEAvt0B\/dkZOiqapDyG5D57cG0IbltBlSbIvA7jCkWw=",
-      "ADS.Blazor.Assessment.Client.dll": "sha256-KSqoqIfQKUJGBhQyU+fIzQ+uut3n\/08pNO+ZJGxUJO8="
+      "ADS.Blazor.Assessment.Client.dll": "sha256-udQZX2FNgnDPEpeCIj9qik6lJJ4p0XRuc52YQo\/gF0c="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
       "ADS.Blazor.Assessment.Shared.pdb": "sha256-FT58oHv8v7kYCn0pOih2Yj77dA2RARezoqwtbbeQeZc=",
-      "ADS.Blazor.Assessment.Client.pdb": "sha256-go3VzL+dmmbIKR21fU9\/BtU53ocLj4Pn3s1PIMbJhSw="
+      "ADS.Blazor.Assessment.Client.pdb": "sha256-zxTpWbE9mmpfP42MPBJs9HFjk+cLyx289vHufU5p\/EI="
     },
     "runtime": {
       "dotnet.6.0.15.4rjv1i09tm.js": "sha256-fb2wBZaRp096nChMG9nDNEcW0kW1whA\/kfQNyH+5QpQ=",

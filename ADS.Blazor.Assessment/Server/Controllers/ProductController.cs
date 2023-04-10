@@ -51,6 +51,7 @@ namespace ADS.Blazor.Assessment.Server.Controllers
         [Route("/Add")]
         public void Post([FromBody] ProductDto addAProduct)
         {
+             
             Product product = new Product();
 
             product.Name = addAProduct.Name;
@@ -61,6 +62,11 @@ namespace ADS.Blazor.Assessment.Server.Controllers
 
             product.Inventory = addAProduct.Inventory;
 
+            if (_context.Categories.Where(x => x.Id == addAProduct.Category.Id).Count() == 0)
+            {
+                throw new ArgumentException("Category does not exist");
+            }
+
             Category category = _context.Categories.Where(x => x.Id == addAProduct.Category.Id).First();
 
             product.Category = category;
@@ -68,6 +74,7 @@ namespace ADS.Blazor.Assessment.Server.Controllers
             _context.Products.Add(product);
 
             _context.SaveChanges();
+
         }
 
 
